@@ -211,7 +211,7 @@
 .equ	RCP_ALIAS_SHIFT	= 3	; Enable 1/8th PWM input alias ("oneshot125")
 
 .if	RC_PULS_REVERSE
-.equ	RCP_DEADBAND	= 50	; Do not start until this much above or below neutral
+.equ	RCP_DEADBAND	= 24	; Do not start until this much above or below neutral
 .equ	PROGRAM_RC_PULS	= (STOP_RC_PULS + FULL_RC_PULS * 3) / 4	; Normally 1660
 .else
 .equ	RCP_DEADBAND	= 0
